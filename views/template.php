@@ -14,11 +14,19 @@
 
     <nav class="navbar navbar-expand navbar-light bg-light">
         <div class="nav navbar-nav">
-            <a class="nav-item nav-link active" href="#">Home <span class="visually-hidden">(current)</span></a>
-            <a class="nav-item nav-link" href="#">Home</a>
-            <a class="nav-item nav-link" href="#">Empleados</a>
+            <a class="nav-item nav-link active" href="#">CRUD Empleados <span class="visually-hidden">(current)</span></a>
+            <a class="nav-item nav-link" href="?controller=site&action=index">Home</a>
+            <a class="nav-item nav-link" href="?controller=empleados&action=index">Empleados</a>
         </div>
     </nav>
+    
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <?php include_once('routes.php'); ?>
+        </div>
+      </div>
+    </div>
       
     <!-- Bootstrap JavaScript Libraries -->
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
